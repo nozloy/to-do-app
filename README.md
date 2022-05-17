@@ -1,4 +1,4 @@
-# MakeGood Laser Landing
+# To-Do App v2
 
 Demo page: [https://todoapp.sadykoff.space](https://todoapp.sadykoff.space)
 
