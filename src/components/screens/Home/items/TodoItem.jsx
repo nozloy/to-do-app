@@ -3,12 +3,12 @@ import CheckBox from './CheckBox'
 import cn from 'classnames'
 import { BsTrash } from 'react-icons/bs'
 
-const TodoItem = ({ todo, changeTodo, removeTodo }) => {
+const TodoItem = ({ todo, editTodo, removeTodo }) => {
 	return (
 		<div className='flex items-center justify-between mb-4 rounded-2xl bg-gray-800 p-4 w-full'>
 			<button
 				className='flex items-center'
-				onClick={() => changeTodo(todo._id)}
+				onClick={() => editTodo(todo._id, todo.title, todo.isComplited)}
 			>
 				<CheckBox isComplited={todo.isComplited} />
 				<span

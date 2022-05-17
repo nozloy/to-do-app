@@ -1,18 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback } from 'react'
 
-export const CreateTodoField = ({ setTodos }) => {
+// interface CreateTodoFieldProps {
+// 	addTodo: (title: string) => void;
+// }
+
+const CreateTodoField = ({ newTodo }) => {
 	const [title, setTitle] = useState('')
-	const addTodo = (title) => {
-		setTodos((prev) => [
-			{
-				_id: new Date().toISOString(),
-				title,
-				isComplited: false,
-			},
-			...prev,
-		])
+	const addTodo = useCallback(() => {
+		newTodo(title)
 		setTitle('')
-	}
+	}, [newTodo, title])
 	return (
 		<div className='flex items-center justify-between mb-6 rounded-2xl p-4 w-full border-slate-700 border-2'>
 			<input
