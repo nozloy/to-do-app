@@ -21,7 +21,7 @@ const Home = () => {
 		state.removeTodo,
 	])
 	return (
-		<div className='w-4/5 mx-auto'>
+		<div className='w-4/5 mx-auto max-w-lg'>
 			<h1 className='text-white text-2xl font-bold text-center mb-10'>
 				To - Do App by Almir Sadykoff
 			</h1>
