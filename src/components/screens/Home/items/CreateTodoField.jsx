@@ -18,7 +18,7 @@ const CreateTodoField = ({ newTodo }) => {
 				onChange={(e) => setTitle(e.target.value)}
 				value={title}
 				onKeyPress={(e) => e.key === 'Enter' && addTodo(title)}
-				placeholder='Добавить задачу (или лису)'
+				placeholder='Добавить задачу'
 			/>
 		</div>
 	)

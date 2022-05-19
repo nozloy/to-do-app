@@ -1,7 +1,7 @@
 import React from 'react'
 import TodoItem from './items/TodoItem'
 import CreateTodoField from './items/CreateTodoField'
-import { useStore } from '../../../data/stores/useLocalStore.ts'
+import { useToDoStore } from '../../../data/stores/useToDoStore.ts'
 
 const Home = () => {
 	// const [todos, setTodos] = useState(data)
@@ -14,7 +14,7 @@ const Home = () => {
 	// const removeTodo = (id) => {
 	// 	setTodos([...todos].filter((t) => t._id !== id))
 	// }
-	const [todos, newTodo, editTodo, removeTodo] = useStore((state) => [
+	const [todos, newTodo, editTodo, removeTodo] = useToDoStore((state) => [
 		state.todos,
 		state.newTodo,
 		state.editTodo,
