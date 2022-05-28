@@ -6,6 +6,7 @@ Demo page: [https://todoapp.sadykoff.space](https://todoapp.sadykoff.space)
 
 - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces.
 - [TailWindCSS](https://tailwindcss.com/) - A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+- [Zustand](https://github.com/pmndrs/zustand/) - A small, fast and scalable bearbones state-management solution using simplified flux principles. Has a comfy api based on hooks, isn't boilerplatey or opinionated.
 
 ## Project structure
 
@@ -15,6 +16,8 @@ $PROJECT_ROOT
 ├── components
     │   # Simple layout
     ├── layout
+    │   # Zustand data store
+    ├── data/stores
     │   # screens
     └── screens
         │   # Home directory
